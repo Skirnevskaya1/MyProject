@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.settings.SettingsFragment">
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_content"
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Взрослый контент"
+            android:textOff="Off"
+            android:textOn="On"
+            android:textSize="18sp"
+            app:showText="true"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/set_contacts_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/black"
+            android:text="Получить список контактов"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:backgroundTint="@color/green_grass" />
+
+        <Button
+            android:id="@+id/set_geolocation_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/black"
+            android:text="Включить геолокацию"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:backgroundTint="@color/green_grass" />
+
+    <Button
+        android:id="@+id/maps_google_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/black"
+        android:text="Открыть карту"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:backgroundTint="@color/green_grass" />
+
+    <Button
+        android:id="@+id/version_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/black"
+        android:text="О приложении"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:backgroundTint="@color/green_grass" />
+
+</LinearLayout>

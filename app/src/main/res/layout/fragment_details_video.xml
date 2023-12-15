@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAEFD0"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context=".ui.details.DetailsVideoFragment">
+
+    <TextView
+        android:id="@+id/name_details_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:text="Название фильма"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/cover_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="end"
+            android:layout_margin="8dp"
+            android:adjustViewBounds="true"
+            android:gravity="center"
+            android:scaleType="fitXY" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/favorite_choice_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:clickable="true"
+            app:srcCompat="@drawable/favourites_icon" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Жанр: "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/genre_details_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:text="Жанр"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Год выхода картины: "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/year_release_details_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:text="Год выхода картины"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="none"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        app:counterOverflowTextAppearance="@style/counterOverride"
+        app:counterTextAppearance="@style/counterText">
+
+        <EditText
+            android:id="@+id/comment_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="#808080"
+            android:gravity="center"
+            android:hint="Комментарий"
+            android:inputType="textAutoComplete"
+            android:lines="3"
+            android:maxLength="50"
+            android:maxLines="3"
+            android:minLines="2"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/description_details_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center|top"
+                android:text="Описание фильма"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mainFragmentFABLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="25dp"
+        android:backgroundTint="@color/teal_700"
+        android:src="@android:drawable/ic_dialog_map"
+        app:maxImageSize="@dimen/fab_location_icon_size"
+        app:tint="@null" />
+
+</LinearLayout>

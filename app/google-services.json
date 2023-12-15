@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "737733544696",
+    "project_id": "video-search-bad86",
+    "storage_bucket": "video-search-bad86.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737733544696:android:75efac01bb0cdb2ac1c90d",
+        "android_client_info": {
+          "package_name": "com.example.myprojectjavaonkotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737733544696-crcgg707pf2n3mugi37ock79ud20p6pj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARLjw2fXA14GOD_IriYIYSwW141JjRPfE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737733544696-crcgg707pf2n3mugi37ock79ud20p6pj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

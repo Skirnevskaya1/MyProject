@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.version.VersionFragment">
+
+    <TextView
+        android:id="@+id/about_app_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="О приложении"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/cod_version_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Код версии: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/version_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Версия: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/build_types_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="build_types_1: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/build_types_text_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="build_types_2: "
+        android:textSize="16sp" />
+
+</LinearLayout>
